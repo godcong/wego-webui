@@ -11,7 +11,7 @@ import {
   MatSidenavModule,
   MatIconModule,
   MatListModule,
-  MatMenuModule
+  MatMenuModule, MatExpansionModule, MatFormFieldModule
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
@@ -31,6 +31,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatMenuModule,
     MatListModule,
     FlexLayoutModule,
+    MatExpansionModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
