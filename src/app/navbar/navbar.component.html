@@ -57,12 +57,24 @@
           *ngIf="isHandset$ | async">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
+
       </div>
+
+
       <div fxFlex="0 1 auto" fxLayout="row" fxLayoutAlign="start center">
-        <span>你好，{{user.getUser()}} | 当前账号：{{user.getAccount()}}</span>
+        <!--<span>你好，{{user.getUser()}}</span>-->
 
         <button mat-button [matMenuTriggerFor]="menu">Menu</button>
         <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>account_balance</mat-icon>
+            <span>公众号</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>account_box</mat-icon>
+            <span>小程序</span>
+          </button>
+          <mat-divider></mat-divider>
           <button mat-menu-item>
             <mat-icon>account_circle</mat-icon>
             <span>切换账号</span>
