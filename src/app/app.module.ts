@@ -14,11 +14,15 @@ import {
   MatMenuModule, MatExpansionModule, MatFormFieldModule
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { FooterComponent } from './footer/footer.component';
+import { OfficialAccountComponent } from './official-account/official-account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent,
+    OfficialAccountComponent
   ],
   imports: [
     BrowserModule,
