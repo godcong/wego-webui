@@ -23,6 +23,8 @@
         </button>
       </div>
       <div fxFlex="0 1 auto" fxLayout="row" fxLayoutAlign="start center">
+        <span>你好，{{user.getUser()}} | 当前账号：{{user.getAccount()}}</span>
+
         <button mat-button [matMenuTriggerFor]="menu">Menu</button>
         <mat-menu #menu="matMenu">
           <button mat-menu-item>
@@ -30,8 +32,8 @@
             <span>切换账号</span>
           </button>
           <button mat-menu-item>
-            <mat-icon>mail</mat-icon>
-            <span>收件箱</span>
+            <mat-icon>message</mat-icon>
+            <span>新消息</span>
           </button>
           <mat-divider></mat-divider>
           <button mat-menu-item>
