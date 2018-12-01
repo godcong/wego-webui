@@ -133,5 +133,10 @@
       }
     }
   },
-  "defaultProject": "WechatService"
+  "defaultProject": "WechatService",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
