@@ -11,18 +11,20 @@ import {
   MatSidenavModule,
   MatIconModule,
   MatListModule,
-  MatMenuModule, MatExpansionModule, MatFormFieldModule
+  MatMenuModule, MatExpansionModule, MatFormFieldModule, MatGridListModule
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { FooterComponent } from './footer/footer.component';
 import { OfficialAccountComponent } from './official-account/official-account.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    OfficialAccountComponent
+    OfficialAccountComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +39,7 @@ import { OfficialAccountComponent } from './official-account/official-account.co
     FlexLayoutModule,
     MatExpansionModule,
     MatFormFieldModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
