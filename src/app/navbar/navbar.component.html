@@ -9,7 +9,7 @@
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title>
-              Personal data
+              基础功能
             </mat-panel-title>
             <!--<mat-panel-description>-->
             <!--Type your name and age-->
@@ -28,7 +28,26 @@
                              (closed)="panelOpenState = false">
           <mat-expansion-panel-header>
             <mat-panel-title>
-              Self aware panel
+              高级设置
+            </mat-panel-title>
+            <!--<mat-panel-description>-->
+            <!--Currently I am {{panelOpenState ? 'open' : 'closed'}}-->
+            <!--</mat-panel-description>-->
+          </mat-expansion-panel-header>
+          <mat-action-row fxLayoutAlign="start center">
+            <mat-icon>account_circle</mat-icon>
+            <button mat-button>first</button>
+          </mat-action-row>
+          <mat-action-row fxLayoutAlign="start center">
+            <mat-icon>account_circle</mat-icon>
+            <button mat-button>second</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              升级扩展
             </mat-panel-title>
             <!--<mat-panel-description>-->
             <!--Currently I am {{panelOpenState ? 'open' : 'closed'}}-->
