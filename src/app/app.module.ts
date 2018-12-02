@@ -17,6 +17,10 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import { FooterComponent } from './footer/footer.component';
 import { OfficialAccountComponent } from './official-account/official-account.component';
 import { HeaderComponent } from './header/header.component';
+import localeZh from '@angular/common/locales/zh-Hans';
+import {registerLocaleData} from '@angular/common';
+
+registerLocaleData(localeZh, 'zh-Hans');
 
 @NgModule({
   declarations: [

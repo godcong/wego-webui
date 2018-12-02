@@ -29,6 +29,13 @@
             "scripts": []
           },
           "configurations": {
+            "zh-Hans": {
+              "aot": true,
+              "outputPath": "src/locale",
+              "i18nFile": "src/locale/messages.zh-Hans.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "zh-Hans"
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -61,6 +68,9 @@
             "browserTarget": "WechatService:build"
           },
           "configurations": {
+            "zh-Hans": {
+              "browserTarget": "WechatService:build:zh-Hans"
+            },
             "production": {
               "browserTarget": "WechatService:build:production"
             }

@@ -10,6 +10,8 @@ import {UserService} from '../user.service';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
+  panelOpenState = false;
+
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
