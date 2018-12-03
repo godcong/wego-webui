@@ -9,11 +9,11 @@
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title>
-              基础功能
+              <mat-icon>account_circle</mat-icon>
             </mat-panel-title>
-            <!--<mat-panel-description>-->
-            <!--Type your name and age-->
-            <!--</mat-panel-description>-->
+            <mat-panel-description i18n>
+              Standard
+            </mat-panel-description>
           </mat-expansion-panel-header>
           <mat-action-row fxLayoutAlign="start center">
             <mat-icon>account_circle</mat-icon>
@@ -28,11 +28,11 @@
                              (closed)="panelOpenState = false">
           <mat-expansion-panel-header>
             <mat-panel-title>
+              <mat-icon>account_circle</mat-icon>
+            </mat-panel-title>
+            <mat-panel-description>
               高级设置
-            </mat-panel-title>
-            <!--<mat-panel-description>-->
-            <!--Currently I am {{panelOpenState ? 'open' : 'closed'}}-->
-            <!--</mat-panel-description>-->
+            </mat-panel-description>
           </mat-expansion-panel-header>
           <mat-action-row fxLayoutAlign="start center">
             <mat-icon>account_circle</mat-icon>
@@ -47,11 +47,11 @@
                              (closed)="panelOpenState = false">
           <mat-expansion-panel-header>
             <mat-panel-title>
-              升级扩展
+              <mat-icon>account_circle</mat-icon>
             </mat-panel-title>
-            <!--<mat-panel-description>-->
-            <!--Currently I am {{panelOpenState ? 'open' : 'closed'}}-->
-            <!--</mat-panel-description>-->
+            <mat-panel-description>
+              升级扩展
+            </mat-panel-description>
           </mat-expansion-panel-header>
           <mat-action-row fxLayoutAlign="start center">
             <mat-icon>account_circle</mat-icon>
@@ -79,7 +79,7 @@
 
       </div>
 
-
+      <mat-divider [vertical]="true"></mat-divider>
       <div fxFlex="0 1 auto" fxLayout="row" fxLayoutAlign="start center">
         <!--<span>你好，{{user.getUser()}}</span>-->
 

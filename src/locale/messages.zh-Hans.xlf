@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="41aac9cecddc9f345c263d3742192e68e227e413" datatype="html">
+            <source>Menu</source>
+            <target>菜单</target>
+            <context-group purpose="location">
+              <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+              <context context-type="linenumber">6</context>
+            </context-group>
+          </trans-unit>
+           <trans-unit id="65b16d7c9d01f8243241e3c11a5fdc238bf68f9a" datatype="html">
+                 <source>Standard</source>
+                 <target>基础功能</target>
+           </trans-unit>
+
+    </body>
+  </file>
+</xliff>
+
