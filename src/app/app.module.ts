@@ -19,6 +19,8 @@ import { OfficialAccountComponent } from './official-account/official-account.co
 import { HeaderComponent } from './header/header.component';
 import localeZh from '@angular/common/locales/zh-Hans';
 import {registerLocaleData} from '@angular/common';
+import { PaymentComponent } from './payment/payment.component';
+import { ConfigComponent } from './config/config.component';
 
 registerLocaleData(localeZh, 'zh-Hans');
 
@@ -28,7 +30,9 @@ registerLocaleData(localeZh, 'zh-Hans');
     NavbarComponent,
     FooterComponent,
     OfficialAccountComponent,
-    HeaderComponent
+    HeaderComponent,
+    PaymentComponent,
+    ConfigComponent
   ],
   imports: [
     BrowserModule,
