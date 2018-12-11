@@ -18,6 +18,7 @@ export class NavbarComponent {
       map(result => result.matches)
     );
 
+
   constructor(private breakpointObserver: BreakpointObserver, private user: UserService) {
   }
 
