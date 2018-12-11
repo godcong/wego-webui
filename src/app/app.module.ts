@@ -21,6 +21,7 @@ import localeZh from '@angular/common/locales/zh-Hans';
 import {registerLocaleData} from '@angular/common';
 import { PaymentComponent } from './payment/payment.component';
 import { ConfigComponent } from './config/config.component';
+import { AppRoutingModule } from './app-routing.module';
 
 registerLocaleData(localeZh, 'zh-Hans');
 
@@ -47,7 +48,8 @@ registerLocaleData(localeZh, 'zh-Hans');
     FlexLayoutModule,
     MatExpansionModule,
     MatFormFieldModule,
-    MatGridListModule
+    MatGridListModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
