@@ -22,6 +22,7 @@ import {registerLocaleData} from '@angular/common';
 import { PaymentComponent } from './payment/payment.component';
 import { ConfigComponent } from './config/config.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MiniProgramComponent } from './mini-program/mini-program.component';
 
 registerLocaleData(localeZh, 'zh-Hans');
 
@@ -33,7 +34,8 @@ registerLocaleData(localeZh, 'zh-Hans');
     OfficialAccountComponent,
     HeaderComponent,
     PaymentComponent,
-    ConfigComponent
+    ConfigComponent,
+    MiniProgramComponent
   ],
   imports: [
     BrowserModule,
