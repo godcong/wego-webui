@@ -23,6 +23,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { ConfigComponent } from './config/config.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MiniProgramComponent } from './mini-program/mini-program.component';
+import { StandardComponent } from './standard/standard.component';
 
 registerLocaleData(localeZh, 'zh-Hans');
 
@@ -35,7 +36,8 @@ registerLocaleData(localeZh, 'zh-Hans');
     HeaderComponent,
     PaymentComponent,
     ConfigComponent,
-    MiniProgramComponent
+    MiniProgramComponent,
+    StandardComponent
   ],
   imports: [
     BrowserModule,
