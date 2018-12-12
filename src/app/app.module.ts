@@ -11,7 +11,7 @@ import {
   MatSidenavModule,
   MatIconModule,
   MatListModule,
-  MatMenuModule, MatExpansionModule, MatFormFieldModule, MatGridListModule
+  MatMenuModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatCardModule
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { FooterComponent } from './footer/footer.component';
@@ -53,7 +53,8 @@ registerLocaleData(localeZh, 'zh-Hans');
     MatExpansionModule,
     MatFormFieldModule,
     MatGridListModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
