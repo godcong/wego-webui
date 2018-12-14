@@ -7,33 +7,32 @@
       配置并初始化数据库
     </mat-card-subtitle>
   </mat-card-title-group>
-  <form class="example-form">
-    <mat-card-content>
-
-      <mat-select placeholder="选择数据库：" [(value)]="selected">
+  <form class="example-form" >
+    <mat-card-content >
+      <mat-select placeholder="选择数据库：" fxFlex="1 1 auto">
         <mat-option *ngFor="let db of databases" [value]="db">
           {{db}}
         </mat-option>
 
       </mat-select>
     </mat-card-content>
-    <mat-card-content>
-      <mat-form-field>
-        <input matInput placeholder="地址" value="localhost">
+    <mat-card-content >
+      <mat-form-field fxFlex="1 1 auto">
+        <input matInput placeholder="地址" value="localhost" >
       </mat-form-field>
     </mat-card-content>
     <mat-card-content>
-      <mat-form-field>
+      <mat-form-field fxFlex="1 1 auto">
         <input matInput placeholder="端口" value="3306">
       </mat-form-field>
     </mat-card-content>
     <mat-card-content>
-      <mat-form-field>
+      <mat-form-field fxFlex="1 1 auto">
         <input matInput placeholder="用户名" value="root">
       </mat-form-field>
     </mat-card-content>
     <mat-card-content>
-      <mat-form-field>
+      <mat-form-field fxFlex="1 1 auto">
         <input type="password" matInput placeholder="密码" value="123456">
       </mat-form-field>
     </mat-card-content>
@@ -56,17 +55,20 @@
       配置系统管理员账号
     </mat-card-subtitle>
   </mat-card-title-group>
-  <mat-card-content>
-    主卡片内容。一般为文本块
+  <mat-card-content >
+    <mat-form-field fxFlex="1 1 auto">
+      <input matInput placeholder="管理员账号" value="admin" >
+    </mat-form-field>
   </mat-card-content>
   <mat-card-content>
-    主卡片内容。一般为文本块
+    <mat-form-field fxFlex="1 1 auto">
+      <input type="password" matInput placeholder="管理员密码" value="">
+    </mat-form-field>
   </mat-card-content>
   <mat-card-content>
-    主卡片内容。一般为文本块
-  </mat-card-content>
-  <mat-card-content>
-    主卡片内容。一般为文本块
+    <mat-form-field fxFlex="1 1 auto">
+      <input type="password" matInput placeholder="再次确认密码" value="">
+    </mat-form-field>
   </mat-card-content>
   <mat-card-actions>
     卡片底部按钮的容器
