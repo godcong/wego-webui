@@ -11,19 +11,25 @@ import {
   MatSidenavModule,
   MatIconModule,
   MatListModule,
-  MatMenuModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatCardModule, MatInputModule
+  MatMenuModule,
+  MatExpansionModule,
+  MatFormFieldModule,
+  MatGridListModule,
+  MatCardModule,
+  MatInputModule,
+  MatOptionModule
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
-import { FooterComponent } from './footer/footer.component';
-import { OfficialAccountComponent } from './official-account/official-account.component';
-import { HeaderComponent } from './header/header.component';
+import {FooterComponent} from './footer/footer.component';
+import {OfficialAccountComponent} from './official-account/official-account.component';
+import {HeaderComponent} from './header/header.component';
 import localeZh from '@angular/common/locales/zh-Hans';
 import {registerLocaleData} from '@angular/common';
-import { PaymentComponent } from './payment/payment.component';
-import { ConfigComponent } from './config/config.component';
-import { AppRoutingModule } from './app-routing.module';
-import { MiniProgramComponent } from './mini-program/mini-program.component';
-import { StandardComponent } from './standard/standard.component';
+import {PaymentComponent} from './payment/payment.component';
+import {ConfigComponent} from './config/config.component';
+import {AppRoutingModule} from './app-routing.module';
+import {MiniProgramComponent} from './mini-program/mini-program.component';
+import {StandardComponent} from './standard/standard.component';
 import {FormsModule} from '@angular/forms';
 
 registerLocaleData(localeZh, 'zh-Hans');
@@ -57,6 +63,7 @@ registerLocaleData(localeZh, 'zh-Hans');
     AppRoutingModule,
     FormsModule,
     MatInputModule,
+    MatOptionModule,
     MatCardModule,
   ],
   providers: [],

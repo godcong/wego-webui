@@ -10,6 +10,11 @@
 
   <mat-card-content>
     <form class="example-form">
+      <mat-select placeholder="Favorite food">
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{food.viewValue}}
+        </mat-option>
+      </mat-select>
       <mat-form-field class="example-full-width">
         <input matInput placeholder="Favorite food" value="Sushi">
       </mat-form-field>
