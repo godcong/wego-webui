@@ -17,7 +17,7 @@ import {
   MatGridListModule,
   MatCardModule,
   MatInputModule,
-  MatOptionModule
+  MatOptionModule, MatSelectModule
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {FooterComponent} from './footer/footer.component';
@@ -64,6 +64,7 @@ registerLocaleData(localeZh, 'zh-Hans');
     FormsModule,
     MatInputModule,
     MatOptionModule,
+    MatSelectModule,
     MatCardModule,
   ],
   providers: [],
