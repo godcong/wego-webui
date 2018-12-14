@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-standard',
@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StandardComponent implements OnInit {
 
-  constructor() { }
+  databases = ['Mysql', 'Sqlite', 'Postgre'];
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
