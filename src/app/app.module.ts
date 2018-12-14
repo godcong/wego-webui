@@ -11,7 +11,7 @@ import {
   MatSidenavModule,
   MatIconModule,
   MatListModule,
-  MatMenuModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatCardModule
+  MatMenuModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatCardModule, MatInputModule
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { FooterComponent } from './footer/footer.component';
@@ -24,6 +24,7 @@ import { ConfigComponent } from './config/config.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MiniProgramComponent } from './mini-program/mini-program.component';
 import { StandardComponent } from './standard/standard.component';
+import {FormsModule} from '@angular/forms';
 
 registerLocaleData(localeZh, 'zh-Hans');
 
@@ -54,6 +55,8 @@ registerLocaleData(localeZh, 'zh-Hans');
     MatFormFieldModule,
     MatGridListModule,
     AppRoutingModule,
+    FormsModule,
+    MatInputModule,
     MatCardModule,
   ],
   providers: [],
