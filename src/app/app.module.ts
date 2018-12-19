@@ -1,74 +1,41 @@
+/**
+ * @license
+ * Copyright Akveo. All Rights Reserved.
+ * Licensed under the MIT License. See License.txt in the project root for license information.
+ */
+import {APP_BASE_HREF} from '@angular/common';
 import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
+import {HttpClientModule} from '@angular/common/http';
+import {CoreModule} from './@core/core.module';
 
 import {AppComponent} from './app.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {NavbarComponent} from './navbar/navbar.component';
-import {LayoutModule} from '@angular/cdk/layout';
-import {
-  MatToolbarModule,
-  MatButtonModule,
-  MatSidenavModule,
-  MatIconModule,
-  MatListModule,
-  MatMenuModule,
-  MatExpansionModule,
-  MatFormFieldModule,
-  MatGridListModule,
-  MatCardModule,
-  MatInputModule,
-  MatOptionModule, MatSelectModule
-} from '@angular/material';
-import {FlexLayoutModule} from '@angular/flex-layout';
-import {FooterComponent} from './footer/footer.component';
-import {OfficialAccountComponent} from './official-account/official-account.component';
-import {HeaderComponent} from './header/header.component';
+import {AppRoutingModule} from './app-routing.module';
+import {ThemeModule} from './@theme/theme.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import localeZh from '@angular/common/locales/zh-Hans';
 import {registerLocaleData} from '@angular/common';
-import {PaymentComponent} from './payment/payment.component';
-import {ConfigComponent} from './config/config.component';
-import {AppRoutingModule} from './app-routing.module';
-import {MiniProgramComponent} from './mini-program/mini-program.component';
-import {StandardComponent} from './standard/standard.component';
-import {FormsModule} from '@angular/forms';
+
 
 registerLocaleData(localeZh, 'zh-Hans');
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    FooterComponent,
-    OfficialAccountComponent,
-    HeaderComponent,
-    PaymentComponent,
-    ConfigComponent,
-    MiniProgramComponent,
-    StandardComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatMenuModule,
-    MatListModule,
-    FlexLayoutModule,
-    MatExpansionModule,
-    MatFormFieldModule,
-    MatGridListModule,
+    HttpClientModule,
     AppRoutingModule,
-    FormsModule,
-    MatInputModule,
-    MatOptionModule,
-    MatSelectModule,
-    MatCardModule,
+
+    NgbModule,
+    ThemeModule.forRoot(),
+    CoreModule.forRoot(),
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [
+    {provide: APP_BASE_HREF, useValue: '/'},
+  ],
 })
 export class AppModule {
 }
