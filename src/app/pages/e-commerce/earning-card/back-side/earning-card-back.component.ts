@@ -3,7 +3,7 @@ import { EarningService, PieChart } from '../../../../@core/data/earning.service
 import { takeWhile } from 'rxjs/operators';
 
 @Component({
-  selector: 'ngx-earning-card-back',
+  selector: 'wechat-earning-card-back',
   styleUrls: ['./earning-card-back.component.scss'],
   templateUrl: './earning-card-back.component.html',
 })

@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'ngx-accordion',
+  selector: 'wechat-accordion',
   templateUrl: 'accordion.component.html',
   styleUrls: ['accordion.component.scss'],
 })

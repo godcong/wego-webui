@@ -7,8 +7,8 @@
     <div class="time-period">Last week</div>
     <div class="value">{{ value }}%</div>
   </div>
-  <ngx-earning-pie-chart [values]="earningPieChartData"
+  <wechat-earning-pie-chart [values]="earningPieChartData"
                          (selectPie)="changeChartInfo($event)"
                          [defaultSelectedCurrency]="defaultSelectedCurrency">
-  </ngx-earning-pie-chart>
+  </wechat-earning-pie-chart>
 </nb-card-body>

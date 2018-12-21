@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-bootstrap',
+  selector: 'wechat-bootstrap',
   template: `
     <router-outlet></router-outlet>
   `,

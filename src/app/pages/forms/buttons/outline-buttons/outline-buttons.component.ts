@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-outline-buttons',
+  selector: 'wechat-outline-buttons',
   styleUrls: ['./outline-buttons.component.scss'],
   templateUrl: './outline-buttons.component.html',
 })

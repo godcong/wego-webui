@@ -2,9 +2,9 @@ import { Component, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-d3-polar',
+  selector: 'wechat-d3-polar',
   template: `
-    <ngx-charts-polar-chart
+    <wechat-charts-polar-chart
       [scheme]="colorScheme"
       [results]="multi"
       [xAxis]="showXAxis"
@@ -15,7 +15,7 @@ import { NbThemeService } from '@nebular/theme';
       [xAxisLabel]="xAxisLabel"
       [yAxisLabel]="yAxisLabel"
       [autoScale]="autoScale">
-    </ngx-charts-polar-chart>
+    </wechat-charts-polar-chart>
   `,
 })
 export class D3PolarComponent implements OnDestroy {

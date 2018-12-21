@@ -5,7 +5,7 @@ import { NbThemeService } from '@nebular/theme';
 declare const echarts: any;
 
 @Component({
-  selector: 'ngx-solar',
+  selector: 'wechat-solar',
   styleUrls: ['./solar.component.scss'],
   template: `
     <nb-card size="xsmall" class="solar-card">

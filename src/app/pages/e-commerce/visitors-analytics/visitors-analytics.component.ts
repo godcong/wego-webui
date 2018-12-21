@@ -4,7 +4,7 @@ import { NbThemeService } from '@nebular/theme';
 
 
 @Component({
-  selector: 'ngx-ecommerce-visitors-analytics',
+  selector: 'wechat-ecommerce-visitors-analytics',
   styleUrls: ['./visitors-analytics.component.scss'],
   templateUrl: './visitors-analytics.component.html',
 })

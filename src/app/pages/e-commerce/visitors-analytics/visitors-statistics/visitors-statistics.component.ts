@@ -5,7 +5,7 @@ import { LayoutService } from '../../../../@core/data/layout.service';
 
 
 @Component({
-  selector: 'ngx-visitors-statistics',
+  selector: 'wechat-visitors-statistics',
   styleUrls: ['./visitors-statistics.component.scss'],
   templateUrl: './visitors-statistics.component.html',
 })

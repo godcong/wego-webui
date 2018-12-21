@@ -4,7 +4,7 @@ import { NbThemeService } from '@nebular/theme';
 import { LayoutService } from '../../../../@core/data/layout.service';
 
 @Component({
-  selector: 'ngx-electricity-chart',
+  selector: 'wechat-electricity-chart',
   styleUrls: ['./electricity-chart.component.scss'],
   template: `
     <div echarts

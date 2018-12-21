@@ -1,12 +1,12 @@
 @import '../../../@theme/styles/themes';
 
 @include nb-install-component() {
-  ngx-d3-bar,
-  ngx-d3-pie,
-  ngx-d3-advanced-pie,
-  ngx-d3-area-stack,
-  ngx-d3-line,
-  ngx-d3-polar {
+  wechat-d3-bar,
+  wechat-d3-pie,
+  wechat-d3-advanced-pie,
+  wechat-d3-area-stack,
+  wechat-d3-line,
+  wechat-d3-polar {
     display: block;
     width: 100%;
     height: nb-theme(card-height-medium);

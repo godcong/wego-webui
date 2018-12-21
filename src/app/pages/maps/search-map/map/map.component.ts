@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Location } from '../entity/Location';
 
 @Component({
-  selector: 'ngx-map',
+  selector: 'wechat-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss'],
 })

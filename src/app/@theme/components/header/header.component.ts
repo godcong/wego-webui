@@ -6,7 +6,7 @@ import { AnalyticsService } from '../../../@core/utils/analytics.service';
 import { LayoutService } from '../../../@core/data/layout.service';
 
 @Component({
-  selector: 'ngx-header',
+  selector: 'wechat-header',
   styleUrls: ['./header.component.scss'],
   templateUrl: './header.component.html',
 })

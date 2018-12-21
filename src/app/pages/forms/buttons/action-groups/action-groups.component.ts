@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-action-groups',
+  selector: 'wechat-action-groups',
   styleUrls: ['./action-groups.component.scss'],
   templateUrl: './action-groups.component.html',
 })

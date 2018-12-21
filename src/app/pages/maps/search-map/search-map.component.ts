@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Location } from './entity/Location';
 
 @Component({
-  selector: 'ngx-search-map',
+  selector: 'wechat-search-map',
   templateUrl: './search-map.component.html',
 })
 export class SearchMapComponent {

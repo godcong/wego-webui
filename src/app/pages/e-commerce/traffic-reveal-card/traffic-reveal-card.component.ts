@@ -4,7 +4,7 @@ import { takeWhile } from 'rxjs/operators';
 import { TrafficBar, TrafficBarService } from '../../../@core/data/traffic-bar.service';
 
 @Component({
-  selector: 'ngx-traffic-reveal-card',
+  selector: 'wechat-traffic-reveal-card',
   styleUrls: ['./traffic-reveal-card.component.scss'],
   templateUrl: './traffic-reveal-card.component.html',
 })

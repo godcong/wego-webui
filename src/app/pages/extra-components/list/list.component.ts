@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { fruits } from './fruits-list';
 
 @Component({
-  selector: 'ngx-list',
+  selector: 'wechat-list',
   templateUrl: 'list.component.html',
   styleUrls: ['list.component.scss'],
 })

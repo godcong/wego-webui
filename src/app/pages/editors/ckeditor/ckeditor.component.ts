@@ -4,7 +4,7 @@ import './ckeditor.loader';
 import 'ckeditor';
 
 @Component({
-  selector: 'ngx-ckeditor',
+  selector: 'wechat-ckeditor',
   template: `
     <nb-card>
       <nb-card-header>

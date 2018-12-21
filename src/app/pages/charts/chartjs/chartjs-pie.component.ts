@@ -2,7 +2,7 @@ import { Component, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-chartjs-pie',
+  selector: 'wechat-chartjs-pie',
   template: `
     <chart type="pie" [data]="data" [options]="options"></chart>
   `,

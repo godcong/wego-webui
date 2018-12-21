@@ -2,9 +2,9 @@ import { Component, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-d3-line',
+  selector: 'wechat-d3-line',
   template: `
-    <ngx-charts-line-chart
+    <wechat-charts-line-chart
       [scheme]="colorScheme"
       [results]="multi"
       [xAxis]="showXAxis"
@@ -14,7 +14,7 @@ import { NbThemeService } from '@nebular/theme';
       [showYAxisLabel]="showYAxisLabel"
       [xAxisLabel]="xAxisLabel"
       [yAxisLabel]="yAxisLabel">
-    </ngx-charts-line-chart>
+    </wechat-charts-line-chart>
   `,
 })
 export class D3LineComponent implements OnDestroy {

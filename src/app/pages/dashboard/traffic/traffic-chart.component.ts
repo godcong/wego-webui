@@ -6,7 +6,7 @@ import { LayoutService } from '../../../@core/data/layout.service';
 const points = [300, 520, 435, 530, 730, 620, 660, 860];
 
 @Component({
-  selector: 'ngx-traffic-chart',
+  selector: 'wechat-traffic-chart',
   styleUrls: ['./traffic.component.scss'],
   template: `
     <div echarts

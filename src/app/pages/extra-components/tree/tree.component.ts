@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-tree',
+  selector: 'wechat-tree',
   templateUrl: './tree.component.html',
   styleUrls: ['./tree.component.scss'],
 })

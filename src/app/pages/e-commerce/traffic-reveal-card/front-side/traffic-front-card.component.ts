@@ -5,7 +5,7 @@ import { takeWhile } from 'rxjs/operators';
 import { TrafficList } from '../../../../@core/data/traffic-list.service';
 
 @Component({
-  selector: 'ngx-traffic-front-card',
+  selector: 'wechat-traffic-front-card',
   styleUrls: ['./traffic-front-card.component.scss'],
   templateUrl: './traffic-front-card.component.html',
 })

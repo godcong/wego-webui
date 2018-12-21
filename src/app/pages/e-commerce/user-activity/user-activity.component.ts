@@ -5,7 +5,7 @@ import { takeWhile } from 'rxjs/operators';
 import { UserActivityService, UserActive } from '../../../@core/data/user-activity.service';
 
 @Component({
-  selector: 'ngx-user-activity',
+  selector: 'wechat-user-activity',
   styleUrls: ['./user-activity.component.scss'],
   template: `
     <nb-card size="medium">

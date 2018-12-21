@@ -6,7 +6,7 @@ import { OrdersChart } from '../../../../@core/data/orders-chart.service';
 import { LayoutService } from '../../../../@core/data/layout.service';
 
 @Component({
-  selector: 'ngx-orders-chart',
+  selector: 'wechat-orders-chart',
   styleUrls: ['./charts-common.component.scss'],
   template: `
     <div echarts

@@ -1,12 +1,12 @@
 @import '../../../@theme/styles/themes';
 
 @include nb-install-component() {
-  ngx-chartjs-pie,
-  ngx-chartjs-bar,
-  ngx-chartjs-line,
-  ngx-chartjs-multiple-xaxis,
-  ngx-chartjs-bar-horizontal,
-  ngx-chartjs-radar {
+  wechat-chartjs-pie,
+  wechat-chartjs-bar,
+  wechat-chartjs-line,
+  wechat-chartjs-multiple-xaxis,
+  wechat-chartjs-bar-horizontal,
+  wechat-chartjs-radar {
     display: block;
     height: nb-theme(card-height-medium);
     width: 100%;

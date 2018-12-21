@@ -8,7 +8,7 @@ import { ProfitChart } from '../../../@core/data/profit-chart.service';
 import { OrdersProfitChartService, OrderProfitChartSummary } from '../../../@core/data/orders-profit-chart.service';
 
 @Component({
-  selector: 'ngx-ecommerce-charts',
+  selector: 'wechat-ecommerce-charts',
   styleUrls: ['./charts-panel.component.scss'],
   templateUrl: './charts-panel.component.html',
 })

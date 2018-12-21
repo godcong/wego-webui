@@ -1,7 +1,7 @@
 import { Component, HostBinding } from '@angular/core';
 
 @Component({
-  selector: 'ngx-news-post-placeholder',
+  selector: 'wechat-news-post-placeholder',
   templateUrl: 'news-post-placeholder.component.html',
   styleUrls: ['news-post-placeholder.component.scss'],
 })

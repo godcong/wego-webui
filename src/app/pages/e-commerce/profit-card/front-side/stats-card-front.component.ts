@@ -3,7 +3,7 @@ import { ProfitBarAnimationChartService } from '../../../../@core/data/profit-ba
 import { takeWhile } from 'rxjs/operators';
 
 @Component({
-  selector: 'ngx-stats-card-front',
+  selector: 'wechat-stats-card-front',
   styleUrls: ['./stats-card-front.component.scss'],
   templateUrl: './stats-card-front.component.html',
 })

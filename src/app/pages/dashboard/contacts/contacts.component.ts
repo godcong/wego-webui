@@ -4,7 +4,7 @@ import { NbThemeService, NbMediaBreakpoint, NbMediaBreakpointsService } from '@n
 import { UserService } from '../../../@core/data/users.service';
 
 @Component({
-  selector: 'ngx-contacts',
+  selector: 'wechat-contacts',
   styleUrls: ['./contacts.component.scss'],
   templateUrl: './contacts.component.html',
 })

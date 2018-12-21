@@ -105,13 +105,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "ngx",
+      "wechat",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "ngx",
+      "wechat",
       "kebab-case"
     ],
     "ban": [

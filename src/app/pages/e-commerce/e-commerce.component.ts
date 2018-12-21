@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-ecommerce',
+  selector: 'wechat-ecommerce',
   templateUrl: './e-commerce.component.html',
 })
 export class ECommerceComponent {

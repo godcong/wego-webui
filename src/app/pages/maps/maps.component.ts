@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-maps',
+  selector: 'wechat-maps',
   template: `
     <router-outlet></router-outlet>
   `,

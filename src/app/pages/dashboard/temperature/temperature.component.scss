@@ -30,7 +30,7 @@
     align-items: center;
   }
 
-  ngx-temperature-dragger {
+  wechat-temperature-dragger {
     margin-top: -1.5rem;
     width: 80%;
     max-width: 300px;
@@ -133,7 +133,7 @@
   }
 
   @include media-breakpoint-down(is) {
-    ngx-temperature-dragger {
+    wechat-temperature-dragger {
       max-width: 250px;
 
       /deep/ .power-bg {

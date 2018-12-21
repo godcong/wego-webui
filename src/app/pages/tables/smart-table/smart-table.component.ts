@@ -4,7 +4,7 @@ import { LocalDataSource } from 'ng2-smart-table';
 import { SmartTableService } from '../../../@core/data/smart-table.service';
 
 @Component({
-  selector: 'ngx-smart-table',
+  selector: 'wechat-smart-table',
   templateUrl: './smart-table.component.html',
   styles: [`
     nb-card {

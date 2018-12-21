@@ -5,7 +5,7 @@ import { LayoutService } from '../../../../@core/data/layout.service';
 
 
 @Component({
-  selector: 'ngx-country-orders-chart',
+  selector: 'wechat-country-orders-chart',
   styleUrls: ['./country-orders-chart.component.scss'],
   template: `
     <div class="header">

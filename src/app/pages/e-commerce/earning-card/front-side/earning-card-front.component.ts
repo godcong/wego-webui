@@ -5,7 +5,7 @@ import { switchMap, takeWhile } from 'rxjs/operators';
 import { EarningService, LiveUpdateChart } from '../../../../@core/data/earning.service';
 
 @Component({
-  selector: 'ngx-earning-card-front',
+  selector: 'wechat-earning-card-front',
   styleUrls: ['./earning-card-front.component.scss'],
   templateUrl: './earning-card-front.component.html',
 })

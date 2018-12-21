@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-stats-card-back',
+  selector: 'wechat-stats-card-back',
   styleUrls: ['./stats-card-back.component.scss'],
   templateUrl: './stats-card-back.component.html',
 })

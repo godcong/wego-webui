@@ -2,7 +2,7 @@ import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-echarts-multiple-xaxis',
+  selector: 'wechat-echarts-multiple-xaxis',
   template: `
     <div echarts [options]="options" class="echart"></div>
   `,

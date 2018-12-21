@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-alert',
+  selector: 'wechat-alert',
   templateUrl: 'alert.component.html',
 })
 export class AlertComponent {

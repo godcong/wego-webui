@@ -4,7 +4,7 @@ import { NbThemeService } from '@nebular/theme';
 import { LayoutService } from '../../../../@core/data/layout.service';
 
 @Component({
-  selector: 'ngx-visitors-analytics-chart',
+  selector: 'wechat-visitors-analytics-chart',
   styleUrls: ['./visitors-analytics-chart.component.scss'],
   template: `
     <div echarts

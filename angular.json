@@ -170,11 +170,11 @@
   "defaultProject": "ngx-admin-demo",
   "schematics": {
     "@schematics/angular:component": {
-      "prefix": "ngx",
+      "prefix": "wechat",
       "styleext": "scss"
     },
     "@schematics/angular:directive": {
-      "prefix": "ngx"
+      "prefix": "wechat"
     }
   }
 }

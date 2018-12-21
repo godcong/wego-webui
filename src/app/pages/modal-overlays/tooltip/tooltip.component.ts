@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-tooltip',
+  selector: 'wechat-tooltip',
   templateUrl: 'tooltip.component.html',
   styleUrls: ['tooltip.component.scss'],
 })

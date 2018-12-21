@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-spinner',
+  selector: 'wechat-spinner',
   templateUrl: 'spinner.component.html',
   styleUrls: ['spinner.component.scss'],
 })

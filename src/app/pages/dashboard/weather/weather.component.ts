@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-weather',
+  selector: 'wechat-weather',
   styleUrls: ['./weather.component.scss'],
   templateUrl: './weather.component.html',
 })

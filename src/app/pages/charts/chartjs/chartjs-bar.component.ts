@@ -2,7 +2,7 @@ import { Component, OnDestroy } from '@angular/core';
 import { NbThemeService, NbColorHelper } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-chartjs-bar',
+  selector: 'wechat-chartjs-bar',
   template: `
     <chart type="bar" [data]="data" [options]="options"></chart>
   `,

@@ -1,15 +1,15 @@
 <nb-reveal-card [showToggleButton]="false" [revealed]="revealed">
   <nb-card-front>
     <nb-card size="small">
-      <ngx-traffic-cards-header (periodChange)="setPeriod($event)"></ngx-traffic-cards-header>
-      <ngx-traffic-front-card [frontCardData]="trafficListData"></ngx-traffic-front-card>
+      <wechat-traffic-cards-header (periodChange)="setPeriod($event)"></wechat-traffic-cards-header>
+      <wechat-traffic-front-card [frontCardData]="trafficListData"></wechat-traffic-front-card>
       <i class="nb-arrow-up" (click)="toggleView()"></i>
     </nb-card>
   </nb-card-front>
   <nb-card-back>
     <nb-card size="small">
-      <ngx-traffic-cards-header (periodChange)="setPeriod($event)"></ngx-traffic-cards-header>
-      <ngx-traffic-back-card [trafficBarData]="trafficBarData"></ngx-traffic-back-card>
+      <wechat-traffic-cards-header (periodChange)="setPeriod($event)"></wechat-traffic-cards-header>
+      <wechat-traffic-back-card [trafficBarData]="trafficBarData"></wechat-traffic-back-card>
       <i class="nb-arrow-down" (click)="toggleView()"></i>
     </nb-card>>
   </nb-card-back>

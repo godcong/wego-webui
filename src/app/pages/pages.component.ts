@@ -3,12 +3,12 @@ import { Component } from '@angular/core';
 import { MENU_ITEMS } from './pages-menu';
 
 @Component({
-  selector: 'ngx-pages',
+  selector: 'wechat-pages',
   template: `
-    <ngx-sample-layout>
+    <wechat-sample-layout>
       <nb-menu [items]="menu"></nb-menu>
       <router-outlet></router-outlet>
-    </ngx-sample-layout>
+    </wechat-sample-layout>
   `,
 })
 export class PagesComponent {

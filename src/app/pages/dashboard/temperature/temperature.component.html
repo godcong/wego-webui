@@ -4,7 +4,7 @@
     <nb-tab tabTitle="Temperature">
 
       <div class="slider-container">
-        <ngx-temperature-dragger [(value)]="temperature" (power)="temperatureOff = !$event"
+        <wechat-temperature-dragger [(value)]="temperature" (power)="temperatureOff = !$event"
                                  [min]="12" [max]="30" [disableArcColor]="colors.layoutBg"
                                  [fillColors]="colors.temperature">
 
@@ -16,7 +16,7 @@
               Celsius
             </div>
           </div>
-        </ngx-temperature-dragger>
+        </wechat-temperature-dragger>
       </div>
 
       <div [(ngModel)]="temperatureMode" ngbRadioGroup data-toggle="buttons"
@@ -39,7 +39,7 @@
     <nb-tab tabTitle="Humidity">
 
       <div class="slider-container">
-        <ngx-temperature-dragger [(value)]="humidity" (power)="humidityOff = !$event"
+        <wechat-temperature-dragger [(value)]="humidity" (power)="humidityOff = !$event"
                                  [min]="0" [max]="100" [disableArcColor]="colors.layoutBg"
                                  [fillColors]="colors.temperature">
 
@@ -48,7 +48,7 @@
               {{ humidityOff ? '--' : (humidity | ngxRound) }}
             </div>
           </div>
-        </ngx-temperature-dragger>
+        </wechat-temperature-dragger>
       </div>
 
       <div [(ngModel)]="humidityMode" ngbRadioGroup data-toggle="buttons"

@@ -3,20 +3,20 @@ import { NbMediaBreakpoint, NbMediaBreakpointsService, NbThemeService } from '@n
 import { takeWhile } from 'rxjs/operators';
 
 @Component({
-  selector: 'ngx-country-orders',
+  selector: 'wechat-country-orders',
   styleUrls: ['./country-orders.component.scss'],
   template: `
     <nb-card [size]="breakpoint.width >= breakpoints.md ? 'medium' : 'xxlarge'">
       <nb-card-header>Country Orders Statistics</nb-card-header>
       <nb-card-body>
-        <ngx-country-orders-map (select)="selectCountryById($event)"
+        <wechat-country-orders-map (select)="selectCountryById($event)"
                                 countryId="USA">
-        </ngx-country-orders-map>
-        <ngx-country-orders-chart [countryName]="countryName"
+        </wechat-country-orders-map>
+        <wechat-country-orders-chart [countryName]="countryName"
                                   [data]="countryData"
                                   [labels]="countriesCategories"
                                   maxValue="20">
-        </ngx-country-orders-chart>
+        </wechat-country-orders-chart>
       </nb-card-body>
     </nb-card>
   `,

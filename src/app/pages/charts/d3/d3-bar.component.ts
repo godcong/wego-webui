@@ -2,9 +2,9 @@ import { Component, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-d3-bar',
+  selector: 'wechat-d3-bar',
   template: `
-    <ngx-charts-bar-vertical
+    <wechat-charts-bar-vertical
       [scheme]="colorScheme"
       [results]="results"
       [xAxis]="showXAxis"
@@ -12,7 +12,7 @@ import { NbThemeService } from '@nebular/theme';
       [legend]="showLegend"
       [xAxisLabel]="xAxisLabel"
       [yAxisLabel]="yAxisLabel">
-    </ngx-charts-bar-vertical>
+    </wechat-charts-bar-vertical>
   `,
 })
 export class D3BarComponent implements OnDestroy {

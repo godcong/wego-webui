@@ -2,12 +2,12 @@ import { Component, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-d3-advanced-pie',
+  selector: 'wechat-d3-advanced-pie',
   template: `
-    <ngx-charts-advanced-pie-chart
+    <wechat-charts-advanced-pie-chart
       [scheme]="colorScheme"
       [results]="single">
-    </ngx-charts-advanced-pie-chart>
+    </wechat-charts-advanced-pie-chart>
   `,
 })
 export class D3AdvancedPieComponent implements OnDestroy {

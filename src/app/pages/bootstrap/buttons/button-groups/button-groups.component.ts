@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-button-groups',
+  selector: 'wechat-button-groups',
   styleUrls: ['./button-groups.component.scss'],
   templateUrl: './button-groups.component.html',
 })

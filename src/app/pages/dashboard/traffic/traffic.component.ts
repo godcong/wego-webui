@@ -2,7 +2,7 @@ import { Component, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-traffic',
+  selector: 'wechat-traffic',
   styleUrls: ['./traffic.component.scss'],
   template: `
     <nb-card size="xsmall">
@@ -19,7 +19,7 @@ import { NbThemeService } from '@nebular/theme';
         </div>
       </nb-card-header>
       <nb-card-body class="p-0">
-        <ngx-traffic-chart></ngx-traffic-chart>
+        <wechat-traffic-chart></wechat-traffic-chart>
       </nb-card-body>
     </nb-card>
   `,

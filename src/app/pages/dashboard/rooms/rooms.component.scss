@@ -3,7 +3,7 @@
 @import '~@nebular/theme/styles/global/breakpoints';
 
 @include nb-install-component() {
-  ngx-room-selector {
+  wechat-room-selector {
     width: 70%;
     border-right: 2px solid nb-theme(separator);
     background: url('../../../../assets/images/square_pattern.svg') repeat;
@@ -19,7 +19,7 @@
     }
   }
 
-  ngx-player {
+  wechat-player {
     width: 30%;
   }
 
@@ -28,7 +28,7 @@
     flex-direction: row;
   }
 
-  ngx-room-selector {
+  wechat-room-selector {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -46,11 +46,11 @@
   }
 
   @include media-breakpoint-down(md) {
-    &.expanded ngx-room-selector {
+    &.expanded wechat-room-selector {
       display: none;
     }
 
-    ngx-room-selector, ngx-player {
+    wechat-room-selector, wechat-player {
       width: 100%;
       border: none;
     }

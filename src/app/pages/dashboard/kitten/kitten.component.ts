@@ -2,7 +2,7 @@ import { Component, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-kitten',
+  selector: 'wechat-kitten',
   styleUrls: ['./kitten.component.scss'],
   templateUrl: './kitten.component.html',
 })

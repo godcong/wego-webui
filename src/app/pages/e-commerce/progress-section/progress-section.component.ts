@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'ngx-progress-section',
+  selector: 'wechat-progress-section',
   styleUrls: ['./progress-section.component.scss'],
   templateUrl: './progress-section.component.html',
 })

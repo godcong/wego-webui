@@ -2,20 +2,20 @@
   <nb-tabset fullWidth (changeTab)="changeTab($event)">
     <nb-tab tabTitle="Orders">
       <div class="chart-container">
-        <ngx-chart-panel-summary [summary]="chartPanelSummary"></ngx-chart-panel-summary>
-        <ngx-chart-panel-header [type]="period"
+        <wechat-chart-panel-summary [summary]="chartPanelSummary"></wechat-chart-panel-summary>
+        <wechat-chart-panel-header [type]="period"
                                 (periodChange)="setPeriodAndGetChartData($event)">
-        </ngx-chart-panel-header>
-        <ngx-orders-chart #ordersChart [ordersChartData]="ordersChartData"></ngx-orders-chart>
+        </wechat-chart-panel-header>
+        <wechat-orders-chart #ordersChart [ordersChartData]="ordersChartData"></wechat-orders-chart>
       </div>
     </nb-tab>
     <nb-tab tabTitle="Profit" [lazyLoad]="true">
       <div class="chart-container">
-        <ngx-chart-panel-summary [summary]="chartPanelSummary"></ngx-chart-panel-summary>
-        <ngx-chart-panel-header [type]="period"
+        <wechat-chart-panel-summary [summary]="chartPanelSummary"></wechat-chart-panel-summary>
+        <wechat-chart-panel-header [type]="period"
                                 (periodChange)="setPeriodAndGetChartData($event)">
-        </ngx-chart-panel-header>
-        <ngx-profit-chart #profitChart [profitChartData]="profitChartData"></ngx-profit-chart>
+        </wechat-chart-panel-header>
+        <wechat-profit-chart #profitChart [profitChartData]="profitChartData"></wechat-profit-chart>
       </div>
     </nb-tab>
   </nb-tabset>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-team',
+  selector: 'wechat-team',
   styleUrls: ['./team.component.scss'],
   templateUrl: './team.component.html',
 })

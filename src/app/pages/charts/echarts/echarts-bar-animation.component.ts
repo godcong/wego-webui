@@ -2,7 +2,7 @@ import { AfterViewInit, Component, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-echarts-bar-animation',
+  selector: 'wechat-echarts-bar-animation',
   template: `
     <div echarts [options]="options" class="echart"></div>
   `,

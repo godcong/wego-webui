@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-spinner-color',
+  selector: 'wechat-spinner-color',
   templateUrl: 'spinner-color.component.html',
 })
 

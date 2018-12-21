@@ -2,7 +2,7 @@ import { Component, HostBinding, Input, OnDestroy } from '@angular/core';
 import { PlayerService, Track } from '../../../../@core/data/player.service';
 
 @Component({
-  selector: 'ngx-player',
+  selector: 'wechat-player',
   styleUrls: ['./player.component.scss'],
   templateUrl: './player.component.html',
 })
