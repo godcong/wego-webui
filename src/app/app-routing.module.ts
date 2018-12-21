@@ -8,10 +8,8 @@ import {
   NbRequestPasswordComponent,
   NbResetPasswordComponent,
 } from '@nebular/auth';
-import {InstallComponent} from './install/install.component';
 
 const routes: Routes = [
-  // {path: 'install', component: InstallComponent},
   {path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule'},
   {
     path: 'auth',
