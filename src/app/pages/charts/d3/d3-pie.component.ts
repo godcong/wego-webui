@@ -4,12 +4,12 @@ import { NbThemeService } from '@nebular/theme';
 @Component({
   selector: 'wechat-d3-pie',
   template: `
-    <wechat-charts-pie-chart
+    <ngx-charts-pie-chart
       [scheme]="colorScheme"
       [results]="results"
       [legend]="showLegend"
       [labels]="showLabels">
-    </wechat-charts-pie-chart>
+    </ngx-charts-pie-chart>
   `,
 })
 export class D3PieComponent implements OnDestroy {

@@ -4,10 +4,10 @@ import { NbThemeService } from '@nebular/theme';
 @Component({
   selector: 'wechat-d3-advanced-pie',
   template: `
-    <wechat-charts-advanced-pie-chart
+    <ngx-charts-advanced-pie-chart
       [scheme]="colorScheme"
       [results]="single">
-    </wechat-charts-advanced-pie-chart>
+    </ngx-charts-advanced-pie-chart>
   `,
 })
 export class D3AdvancedPieComponent implements OnDestroy {

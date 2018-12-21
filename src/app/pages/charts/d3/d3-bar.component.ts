@@ -4,7 +4,7 @@ import { NbThemeService } from '@nebular/theme';
 @Component({
   selector: 'wechat-d3-bar',
   template: `
-    <wechat-charts-bar-vertical
+    <ngx-charts-bar-vertical
       [scheme]="colorScheme"
       [results]="results"
       [xAxis]="showXAxis"
@@ -12,7 +12,7 @@ import { NbThemeService } from '@nebular/theme';
       [legend]="showLegend"
       [xAxisLabel]="xAxisLabel"
       [yAxisLabel]="yAxisLabel">
-    </wechat-charts-bar-vertical>
+    </ngx-charts-bar-vertical>
   `,
 })
 export class D3BarComponent implements OnDestroy {
