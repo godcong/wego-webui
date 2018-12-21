@@ -23,7 +23,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     AppRoutingModule,
 
-    NgbModule.forRoot(),
+    NgbModule,
     ThemeModule.forRoot(),
     CoreModule.forRoot(),
   ],
