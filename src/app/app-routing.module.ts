@@ -11,6 +11,7 @@ import {
 
 const routes: Routes = [
   {path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule'},
+  {path: 'install', loadChildren: 'app/install/install.module#InstallModule'},
   {
     path: 'auth',
     component: NbAuthComponent,
@@ -46,7 +47,7 @@ const routes: Routes = [
 ];
 
 const config: ExtraOptions = {
-  useHash: true,
+  useHash: false,
 };
 
 @NgModule({
