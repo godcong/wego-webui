@@ -6,7 +6,7 @@ import {InstallRoutingModule} from './install-routing.module';
   declarations: [InstallComponent],
   imports: [
     InstallRoutingModule
-  ]
+  ],
 })
 export class InstallModule {
 }
