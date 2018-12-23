@@ -26,7 +26,6 @@ import {HeaderComponent} from './header/header.component';
 import localeZh from '@angular/common/locales/zh-Hans';
 import {registerLocaleData} from '@angular/common';
 import {PaymentComponent} from './payment/payment.component';
-import {ConfigComponent} from './config/config.component';
 import {AppRoutingModule} from './app-routing.module';
 import {MiniProgramComponent} from './mini-program/mini-program.component';
 import {StandardComponent} from './standard/standard.component';
@@ -42,7 +41,6 @@ registerLocaleData(localeZh, 'zh-Hans');
     OfficialAccountComponent,
     HeaderComponent,
     PaymentComponent,
-    ConfigComponent,
     MiniProgramComponent,
     StandardComponent
   ],
