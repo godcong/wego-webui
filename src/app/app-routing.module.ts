@@ -5,8 +5,10 @@ import {PaymentComponent} from './payment/payment.component';
 import {OfficialAccountComponent} from './official-account/official-account.component';
 import {MiniProgramComponent} from './mini-program/mini-program.component';
 import {StandardComponent} from './standard/standard.component';
+import {InstallComponent} from './install/install.component';
 
 const routes: Routes = [
+  {path: 'install', component:InstallComponent},
   {path: 'payment', component: PaymentComponent},
   {path: 'officialAccount', component: OfficialAccountComponent},
   {path: 'miniProgram', component: MiniProgramComponent},
