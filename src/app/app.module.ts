@@ -30,7 +30,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {MiniProgramComponent} from './mini-program/mini-program.component';
 import {StandardComponent} from './standard/standard.component';
 import {FormsModule} from '@angular/forms';
-import {InstallComponent} from './install/install.component';
+import {InstallModule} from './install/install.module';
 
 registerLocaleData(localeZh, 'zh-Hans');
 
@@ -44,7 +44,6 @@ registerLocaleData(localeZh, 'zh-Hans');
     PaymentComponent,
     MiniProgramComponent,
     StandardComponent,
-    InstallComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,7 +65,7 @@ registerLocaleData(localeZh, 'zh-Hans');
     MatOptionModule,
     MatSelectModule,
     MatCardModule,
-    // InstallModule,
+    InstallModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
