@@ -1,13 +1,14 @@
 import {NgModule} from '@angular/core';
 // import {CommonModule} from '@angular/common';
 import {InstallComponent} from './install.component';
-import {MatCardModule} from '@angular/material';
+import {MatCardModule, MatStepperModule} from '@angular/material';
 
 @NgModule({
   declarations: [InstallComponent],
   imports: [
     // CommonModule,
     MatCardModule,
+    MatStepperModule
   ]
 })
 export class InstallModule {
