@@ -1,14 +1,16 @@
 import {NgModule} from '@angular/core';
-// import {CommonModule} from '@angular/common';
 import {InstallComponent} from './install.component';
-import {MatCardModule, MatStepperModule} from '@angular/material';
+import {MatCardModule, MatFormFieldModule, MatInputModule, MatStepperModule} from '@angular/material';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [InstallComponent],
   imports: [
-    // CommonModule,
     MatCardModule,
-    MatStepperModule
+    MatStepperModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
   ]
 })
 export class InstallModule {

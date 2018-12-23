@@ -1,32 +1,32 @@
 <mat-horizontal-stepper [linear]="isLinear" #stepper="">
-  <mat-step [stepcontrol]="firstFormGroup">
-    <form [formgroup]="firstFormGroup">
-      <ng-template matsteplabel="">Fill out your name</ng-template>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel="">Fill out your name</ng-template>
       <mat-form-field>
-        <input matinput="" placeholder="Last name, First name" formcontrolname="firstCtrl" required="">
+        <input matInput="" placeholder="Last name, First name" formControlName="firstCtrl" required="">
       </mat-form-field>
       <div>
-        <button mat-button="" matsteppernext="">Next</button>
+        <button mat-button="" matStepperNext="">Next</button>
       </div>
     </form>
   </mat-step>
-  <mat-step [stepcontrol]="secondFormGroup">
-    <form [formgroup]="secondFormGroup">
-      <ng-template matsteplabel="">Fill out your address</ng-template>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel="">Fill out your address</ng-template>
       <mat-form-field>
-        <input matinput="" placeholder="Address" formcontrolname="secondCtrl" required="">
+        <input matInput="" placeholder="Address" formControlName="secondCtrl" required="">
       </mat-form-field>
       <div>
-        <button mat-button="" matstepperprevious="">Back</button>
-        <button mat-button="" matsteppernext="">Next</button>
+        <button mat-button="" matStepperPrevious="">Back</button>
+        <button mat-button="" matStepperNext="">Next</button>
       </div>
     </form>
   </mat-step>
   <mat-step>
-    <ng-template matsteplabel="">Done</ng-template>
+    <ng-template matStepLabel="">Done</ng-template>
     You are now done.
     <div>
-      <button mat-button="" matstepperprevious="">Back</button>
+      <button mat-button="" matStepperPrevious="">Back</button>
       <button mat-button="" (click)="stepper.reset()">Reset</button>
     </div>
   </mat-step>
