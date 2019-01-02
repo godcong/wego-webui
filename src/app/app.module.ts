@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {NavbarComponent} from './navbar/navbar.component';
+import {NavbarComponent} from './pages/navbar/navbar.component';
 import {LayoutModule} from '@angular/cdk/layout';
 import {
   MatToolbarModule,
@@ -20,31 +20,24 @@ import {
   MatOptionModule, MatSelectModule
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
-import {FooterComponent} from './footer/footer.component';
-import {OfficialAccountComponent} from './official-account/official-account.component';
-import {HeaderComponent} from './header/header.component';
+import {FooterComponent} from './pages/footer/footer.component';
+import {OfficialAccountComponent} from './pages/official-account/official-account.component';
+import {HeaderComponent} from './pages/header/header.component';
 import localeZh from '@angular/common/locales/zh-Hans';
 import {registerLocaleData} from '@angular/common';
-import {PaymentComponent} from './payment/payment.component';
+import {PaymentComponent} from './pages/payment/payment.component';
 import {AppRoutingModule} from './app-routing.module';
-import {MiniProgramComponent} from './mini-program/mini-program.component';
-import {StandardComponent} from './standard/standard.component';
+import {MiniProgramComponent} from './pages/mini-program/mini-program.component';
+import {StandardComponent} from './pages/standard/standard.component';
 import {FormsModule} from '@angular/forms';
 import {InstallModule} from './install/install.module';
+import { PagesComponent } from './pages/pages.component';
 
 registerLocaleData(localeZh, 'zh-Hans');
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    FooterComponent,
-    OfficialAccountComponent,
-    HeaderComponent,
-    PaymentComponent,
-    MiniProgramComponent,
-    StandardComponent,
-  ],
+  PagesComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
