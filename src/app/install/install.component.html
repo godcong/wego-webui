@@ -62,8 +62,8 @@
             </mat-form-field>
             <mat-form-field appearance="outline">
               <input matInput type="password" placeholder="确认密码" formControlName="confirmPassword"
-                     [errorStateMatcher]="matcher"
                      required>
+              <mat-error>密码错误</mat-error>
             </mat-form-field>
             <mat-form-field appearance="outline">
               <input matInput placeholder="管理员邮箱" formControlName="ValidatorsAdminEmail" required>

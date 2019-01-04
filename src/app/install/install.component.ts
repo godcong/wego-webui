@@ -16,20 +16,6 @@ interface Administrator {
   Email: string
 }
 
-export class PasswordValidation {
-  static MatchPassword(AC: AbstractControl) {
-    let password = AC.get('password').value; // to get value in input tag
-    let confirmPassword = AC.get('confirmPassword').value; // to get value in input tag
-    if (password != confirmPassword) {
-      console.log('false');
-      AC.get('confirmPassword').setErrors({MatchPassword: true});
-    } else {
-      console.log('true');
-      return null;
-    }
-  }
-}
-
 @Component({
   selector: 'app-install',
   templateUrl: './install.component.html',
@@ -80,7 +66,7 @@ export class InstallComponent implements OnInit {
       password: ['', Validators.required],
       confirmPassword: ['', Validators.required],
     }, {
-      validator: PasswordValidation.MatchPassword,
+      validator: InstallComponent.matchPassword,
     });
     this.thirdFormGroup = this._formBuilder.group({
       secondCtrl: ['', Validators.required]
@@ -91,4 +77,15 @@ export class InstallComponent implements OnInit {
     console.log(this.db);
   }
 
+  static matchPassword(AC: AbstractControl) {
+    let password = AC.get('password').value; // to get value in input tag
+    let confirmPassword = AC.get('confirmPassword').value; // to get value in input tag
+    if (password != confirmPassword) {
+      console.log('false');
+      AC.get('confirmPassword').setErrors({MatchPassword: true});
+    } else {
+      console.log('true');
+      return null;
+    }
+  }
 }
