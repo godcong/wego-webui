@@ -41,7 +41,8 @@
                        required>
               </mat-form-field>
               <div>
-                <button mat-button matStepperNext type="button" (click)="log()">Next</button>
+                <button mat-flat-button matStepperNext color="primary" type="button" (click)="log()">Next
+                </button>
               </div>
             </div>
           </form>
@@ -49,6 +50,10 @@
         <mat-step [stepControl]="secondFormGroup">
           <form [formGroup]="secondFormGroup">
             <ng-template matStepLabel>管理员帐号设置</ng-template>
+            <div fxFlexFill>
+              <h3>创建管理员帐号并不是必须的，第一个注册用户将自动获得管理员权限。</h3>
+            </div>
+
             <mat-form-field>
               <input matInput="" placeholder="Address" formControlName="secondCtrl" required="">
             </mat-form-field>

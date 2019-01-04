@@ -1,9 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
-import {Data} from '@angular/router';
 
-export interface Database {
+interface Database {
   Type: string;
   Host: string;
   User: string;
@@ -21,7 +20,6 @@ export interface Database {
 })
 export class InstallComponent implements OnInit {
   db: Database;
-  db_type: string;
   db_host: string = '127.0.0.1:3306';
   db_user: string = 'root';
   db_passwd: string = '';
@@ -57,7 +55,6 @@ export class InstallComponent implements OnInit {
       secondCtrl: ['', Validators.required]
     });
   }
-
 
   log() {
     console.log(this.db);
