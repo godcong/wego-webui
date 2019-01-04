@@ -6,17 +6,19 @@ import {
   MatDividerModule,
   MatFormFieldModule,
   MatGridListModule,
-  MatInputModule, MatListModule,
+  MatInputModule, MatListModule, MatOptionModule, MatSelectModule,
   MatStepperModule
 } from '@angular/material';
 import {ReactiveFormsModule} from '@angular/forms';
 import {InstallRoutingModule} from './install-routing.module';
+import {BrowserModule} from '@angular/platform-browser';
 
 
 @NgModule({
   declarations: [InstallComponent],
 
   imports: [
+    BrowserModule,
     MatCardModule,
     MatStepperModule,
     MatFormFieldModule,
@@ -24,6 +26,8 @@ import {InstallRoutingModule} from './install-routing.module';
     MatDividerModule,
     MatListModule,
     MatInputModule,
+    MatOptionModule,
+    MatSelectModule,
     MatGridListModule,
     ReactiveFormsModule,
     InstallRoutingModule

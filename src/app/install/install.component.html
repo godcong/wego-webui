@@ -12,14 +12,36 @@
                 <h3>本服务要求安装 MySQL、PostgreSQL、SQLite3、MSSQL 或 TiDB。</h3>
               </div>
               <!--<mat-divider vertical="false"></mat-divider>-->
-
-
-                <mat-form-field>
-                  <input matInput placeholder="地址" formControlName="firstCtrl" required>
-                </mat-form-field>
-
+              <mat-form-field appearance="outline">
+                <mat-select placeholder="数据库类型" formControlName="ValidatorsType" name="db_type" [(ngModel)]="db.Type">
+                  <mat-option *ngFor="let t of Types" [value]="t">
+                    {{t}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <input matInput placeholder="数据库主机" formControlName="ValidatorsHost" name="db_host"
+                       [(ngModel)]="db.Host"
+                       required>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <input matInput placeholder="数据库用户" formControlName="ValidatorsUser" name="db_user"
+                       [(ngModel)]="db.User"
+                       required>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <input matInput placeholder="数据库用户密码" type="password" formControlName="ValidatorsPassword"
+                       name="db_passwd"
+                       [(ngModel)]="db.Password"
+                       required>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <input matInput placeholder="数据库名称" formControlName="ValidatorsName" name="db_name"
+                       [(ngModel)]="db.Name"
+                       required>
+              </mat-form-field>
               <div>
-                <button mat-button matStepperNext type="button">Next</button>
+                <button mat-button matStepperNext type="button" (click)="log()">Next</button>
               </div>
             </div>
           </form>
