@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {InstallComponent} from './install.component';
-import {MatCardModule, MatFormFieldModule, MatInputModule, MatStepperModule} from '@angular/material';
+import {MatCardModule, MatFormFieldModule, MatGridListModule, MatInputModule, MatStepperModule} from '@angular/material';
 import {ReactiveFormsModule} from '@angular/forms';
 import {InstallRoutingModule} from './install-routing.module';
 
@@ -13,6 +13,7 @@ import {InstallRoutingModule} from './install-routing.module';
     MatStepperModule,
     MatFormFieldModule,
     MatInputModule,
+    MatGridListModule,
     ReactiveFormsModule,
     InstallRoutingModule
   ]

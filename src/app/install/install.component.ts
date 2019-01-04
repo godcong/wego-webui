@@ -7,10 +7,11 @@ import {FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./install.component.scss']
 })
 export class InstallComponent implements OnInit {
+  width = "800px";
   isLinear = false;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
-
+  thirdFormGroup: FormGroup;
   constructor(private _formBuilder: FormBuilder) {
   }
 
@@ -19,6 +20,9 @@ export class InstallComponent implements OnInit {
       firstCtrl: ['', Validators.required]
     });
     this.secondFormGroup = this._formBuilder.group({
+      secondCtrl: ['', Validators.required]
+    });
+    this.thirdFormGroup = this._formBuilder.group({
       secondCtrl: ['', Validators.required]
     });
   }
