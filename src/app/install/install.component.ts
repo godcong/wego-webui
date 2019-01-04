@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
 
 interface Database {
@@ -8,6 +8,26 @@ interface Database {
   User: string;
   Password: string;
   Name: string;
+}
+
+interface Administrator {
+  UserName: string;
+  Password: string;
+  Email: string
+}
+
+export class PasswordValidation {
+  static MatchPassword(AC: AbstractControl) {
+    let password = AC.get('password').value; // to get value in input tag
+    let confirmPassword = AC.get('confirmPassword').value; // to get value in input tag
+    if (password != confirmPassword) {
+      console.log('false');
+      AC.get('confirmPassword').setErrors({MatchPassword: true});
+    } else {
+      console.log('true');
+      return null;
+    }
+  }
 }
 
 @Component({
@@ -20,6 +40,7 @@ interface Database {
 })
 export class InstallComponent implements OnInit {
   db: Database;
+  admin: Administrator;
   db_host: string = '127.0.0.1:3306';
   db_user: string = 'root';
   db_passwd: string = '';
@@ -38,6 +59,11 @@ export class InstallComponent implements OnInit {
       Password: this.db_passwd,
       Name: this.db_name,
     };
+    this.admin = {
+      UserName: '',
+      Password: '',
+      Email: '',
+    };
   }
 
   ngOnInit() {
@@ -49,7 +75,12 @@ export class InstallComponent implements OnInit {
       ValidatorsName: ['', Validators.required],
     });
     this.secondFormGroup = this._formBuilder.group({
-      secondCtrl: ['', Validators.required]
+      ValidatorsAdminUser: ['', Validators.required],
+      ValidatorsAdminEmail: ['', Validators.email],
+      password: ['', Validators.required],
+      confirmPassword: ['', Validators.required],
+    }, {
+      validator: PasswordValidation.MatchPassword,
     });
     this.thirdFormGroup = this._formBuilder.group({
       secondCtrl: ['', Validators.required]

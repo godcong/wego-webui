@@ -47,15 +47,26 @@
             </div>
           </form>
         </mat-step>
-        <mat-step [stepControl]="secondFormGroup">
+        <mat-step [stepControl]="secondFormGroup" optional="true">
           <form [formGroup]="secondFormGroup">
             <ng-template matStepLabel>管理员帐号设置</ng-template>
             <div fxFlexFill>
               <h3>创建管理员帐号并不是必须的，第一个注册用户将自动获得管理员权限。</h3>
             </div>
 
-            <mat-form-field>
-              <input matInput="" placeholder="Address" formControlName="secondCtrl" required="">
+            <mat-form-field appearance="outline">
+              <input matInput placeholder="管理员用户名" formControlName="ValidatorsAdminUser" required>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <input matInput type="password" placeholder="管理员密码" formControlName="password" required>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <input matInput type="password" placeholder="确认密码" formControlName="confirmPassword"
+                     [errorStateMatcher]="matcher"
+                     required>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <input matInput placeholder="管理员邮箱" formControlName="ValidatorsAdminEmail" required>
             </mat-form-field>
             <div>
               <button mat-button matStepperPrevious type="button">Back</button>
@@ -65,11 +76,14 @@
         </mat-step>
         <mat-step [stepControl]="thirdFormGroup">
           <form [formGroup]="thirdFormGroup">
-            <ng-template matStepLabel>Done</ng-template>
-            You are now done.
+            <ng-template matStepLabel>完成</ng-template>
+            <div fxFlexFill>
+              <h3>是否提交？</h3>
+            </div>
             <div>
               <button mat-button matStepperPrevious type="button">Back</button>
               <button mat-button (click)="stepper.reset()">Reset</button>
+              <button mat-button type="submit">Submit</button>
             </div>
           </form>
         </mat-step>
