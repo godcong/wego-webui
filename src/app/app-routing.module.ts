@@ -2,7 +2,6 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {ExtraOptions, RouterModule, Routes} from '@angular/router';
 import {AppComponent} from './app.component';
-import {InitializeClass} from './initialize.class';
 import {InstallComponent} from './install/install.component';
 import {PagesComponent} from './pages/pages.component';
 // import {PaymentComponent} from './payment/payment.component';
@@ -21,7 +20,7 @@ const routes: Routes = [
     }, {
       path: 'pages',
       component: PagesComponent,
-    }]
+    },]
   },
   // {path: 'install', loadChildren: './install/install.module#InstallModule'},
   // {path: 'pages', loadChildren: './pages/pages.module#PagesModule'},
