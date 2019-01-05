@@ -9,7 +9,7 @@ export class AppService {
   // private http: HttpClient;
 
   isInstalled(): boolean {
-    return false;
+    return true;
   }
 
   constructor() {
