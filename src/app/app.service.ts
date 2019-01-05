@@ -8,8 +8,8 @@ import {HttpClient} from '@angular/common/http';
 export class AppService {
   // private http: HttpClient;
 
-  static isInstalled(): boolean {
-    return true;
+  isInstalled(): boolean {
+    return false;
   }
 
   constructor() {

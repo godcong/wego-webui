@@ -6,6 +6,7 @@ import localeZh from '@angular/common/locales/zh-Hans';
 import {APP_BASE_HREF, registerLocaleData} from '@angular/common';
 import {AppRoutingModule} from './app-routing.module';
 import {InstallModule} from './install/install.module';
+import {PagesModule} from './pages/pages.module';
 
 
 registerLocaleData(localeZh, 'zh-Hans');
@@ -17,6 +18,7 @@ registerLocaleData(localeZh, 'zh-Hans');
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    PagesModule,
     InstallModule,
     AppRoutingModule,
   ],
