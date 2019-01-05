@@ -12,6 +12,7 @@ import {
 import {ReactiveFormsModule} from '@angular/forms';
 import {InstallRoutingModule} from './install-routing.module';
 import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import {BrowserModule} from '@angular/platform-browser';
 
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     MatCardModule,
     MatStepperModule,
     MatFormFieldModule,
