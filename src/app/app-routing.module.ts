@@ -4,6 +4,7 @@ import {ExtraOptions, RouterModule, Routes} from '@angular/router';
 import {AppComponent} from './app.component';
 import {InstallComponent} from './install/install.component';
 import {PagesComponent} from './pages/pages.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 // import {PaymentComponent} from './payment/payment.component';
 // import {OfficialAccountComponent} from './official-account/official-account.component';
 // import {MiniProgramComponent} from './mini-program/mini-program.component';
@@ -22,13 +23,12 @@ const routes: Routes = [
       component: PagesComponent,
     },]
   },
-  // {path: 'install', loadChildren: './install/install.module#InstallModule'},
-  // {path: 'pages', loadChildren: './pages/pages.module#PagesModule'},
-  {path: '', redirectTo: 'pages', pathMatch: 'full'},
+  {path: '', redirectTo: 'install', pathMatch: 'full'},
+  {path: '**', component: PageNotFoundComponent},
 ];
 
 const config: ExtraOptions = {
-  useHash: true,
+  useHash: false,
   enableTracing: true,
 };
 

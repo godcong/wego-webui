@@ -18,9 +18,9 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit(): void {
-    // setTimeout(() => {
-    //   this.router.navigateByUrl('/pages');
-    // }, 3000);
+    setTimeout(() => {
+      this.router.navigateByUrl('/pages');
+    }, 3000);
     if (!this.service.isInstalled()) {
       console.log('navigate');
       let promise = this.router.navigate(['install']);

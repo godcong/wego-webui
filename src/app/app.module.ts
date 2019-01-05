@@ -7,6 +7,7 @@ import {APP_BASE_HREF, registerLocaleData} from '@angular/common';
 import {AppRoutingModule} from './app-routing.module';
 import {InstallModule} from './install/install.module';
 import {PagesModule} from './pages/pages.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 registerLocaleData(localeZh, 'zh-Hans');
@@ -14,6 +15,7 @@ registerLocaleData(localeZh, 'zh-Hans');
 @NgModule({
   declarations: [
     AppComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
