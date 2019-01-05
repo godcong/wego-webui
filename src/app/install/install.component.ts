@@ -1,20 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
-
-interface Database {
-  Type: string;
-  Host: string;
-  User: string;
-  Password: string;
-  Name: string;
-}
-
-interface Administrator {
-  UserName: string;
-  Password: string;
-  Email: string
-}
+import {InstallInterface} from './install-interface';
 
 @Component({
   selector: 'app-install',
@@ -25,7 +12,7 @@ interface Administrator {
   }]
 })
 export class InstallComponent implements OnInit {
-  db: Database;
+  db: InstallInterface;
   admin: Administrator;
   db_host: string = '127.0.0.1:3306';
   db_user: string = 'root';
@@ -69,7 +56,7 @@ export class InstallComponent implements OnInit {
       validator: InstallComponent.matchPassword,
     });
     this.thirdFormGroup = this._formBuilder.group({
-      secondCtrl: ['', Validators.required]
+      // secondCtrl: ['', Validators.required]
     });
   }
 
@@ -88,4 +75,17 @@ export class InstallComponent implements OnInit {
       return null;
     }
   }
+
+  // openDialog(): void {
+  //   const dialogRef = this.dialog.open(InstallComponent, {
+  //     width: '250px',
+  //     data: {name: "完成", animal: this.animal}
+  //   });
+  //
+  //   dialogRef.afterClosed().subscribe(result => {
+  //     console.log('The dialog was closed');
+  //     this.animal = result;
+  //   });
+  // }
+
 }
