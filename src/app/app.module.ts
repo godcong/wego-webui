@@ -7,13 +7,14 @@ import {APP_BASE_HREF, registerLocaleData} from '@angular/common';
 import {AppRoutingModule} from './app-routing.module';
 import {InstallModule} from './install/install.module';
 import {PagesModule} from './pages/pages.module';
+import { InitializeClass } from './initialize.class';
 
 
 registerLocaleData(localeZh, 'zh-Hans');
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

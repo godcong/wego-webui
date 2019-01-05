@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
-import {Administrator, InstallInterface} from './install-interface';
+import {Administrator, InstallInterface} from './install.interface';
 import {AppService} from '../app.service';
 import {Router} from '@angular/router';
 

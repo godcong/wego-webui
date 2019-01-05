@@ -4,7 +4,7 @@ import {InstallComponent} from './install.component';
 
 const routes: Routes = [
   {path: '', component: InstallComponent},
-  {path: '**', redirectTo: ''},
+  // {path: '**', redirectTo: '/install', pathMatch: 'full'},
 ];
 
 @NgModule({
