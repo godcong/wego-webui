@@ -1,7 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
-import {InstallInterface} from './install-interface';
+import {Administrator, InstallInterface} from './install-interface';
+import {AppService} from '../app.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-install',
@@ -23,8 +25,12 @@ export class InstallComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
   thirdFormGroup: FormGroup;
+  private router: Router;
+  private formBuilder: FormBuilder;
 
-  constructor(private _formBuilder: FormBuilder) {
+  constructor(formBuilder: FormBuilder, router: Router) {
+    this.router = router;
+    this.formBuilder = formBuilder;
     this.db = {
       Type: this.Types[0],
       Host: this.db_host,
@@ -40,14 +46,14 @@ export class InstallComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.firstFormGroup = this._formBuilder.group({
+    this.firstFormGroup = this.formBuilder.group({
       ValidatorsType: ['', Validators.required],
       ValidatorsHost: ['', Validators.required],
       ValidatorsUser: ['', Validators.required],
       ValidatorsPassword: ['', Validators.required],
       ValidatorsName: ['', Validators.required],
     });
-    this.secondFormGroup = this._formBuilder.group({
+    this.secondFormGroup = this.formBuilder.group({
       ValidatorsAdminUser: ['', Validators.required],
       ValidatorsAdminEmail: ['', Validators.email],
       password: ['', Validators.required],
@@ -55,7 +61,7 @@ export class InstallComponent implements OnInit {
     }, {
       validator: InstallComponent.matchPassword,
     });
-    this.thirdFormGroup = this._formBuilder.group({
+    this.thirdFormGroup = this.formBuilder.group({
       // secondCtrl: ['', Validators.required]
     });
   }

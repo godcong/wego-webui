@@ -10,7 +10,7 @@ import {ExtraOptions, RouterModule, Routes} from '@angular/router';
 const routes: Routes = [
   {path: 'install', loadChildren: './install/install.module#InstallModule'},
   {path: 'pages', loadChildren: './pages/pages.module#PagesModule'},
-  {path: '', redirectTo: 'install', pathMatch: 'full'},
+  {path: '', redirectTo: 'pages', pathMatch: 'full'},
   // {path: 'install', component: InstallComponent},
   // {path: 'payment', component: PaymentComponent},
   // {path: 'officialAccount', component: OfficialAccountComponent},
