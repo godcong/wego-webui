@@ -6,14 +6,21 @@ import {HttpClient} from '@angular/common/http';
 })
 
 export class AppService {
-  // private http: HttpClient;
+  private http: HttpClient;
 
   isInstalled(): boolean {
-    return true;
+    return false;
+    this.http.get('v0/inited').subscribe(function (data: any) {
+      if (data != null && data['Code'] == 0) {
+        console.log(data);
+        return true;
+      }
+    });
+    return false;
   }
 
-  constructor() {
-    // this.http = http;
+  constructor(http: HttpClient) {
+    this.http = http;
   }
 
 

@@ -30,6 +30,7 @@ export class InstallComponent implements OnInit {
   private service: AppService;
 
   constructor(formBuilder: FormBuilder, router: Router, service: AppService) {
+    
     this.router = router;
     this.formBuilder = formBuilder;
     this.service = service;
@@ -48,12 +49,6 @@ export class InstallComponent implements OnInit {
   }
 
   ngOnInit() {
-    if (this.service.isInstalled()) {
-      console.log('navigate');
-      let promise = this.router.navigate(['pages']);
-      console.log(promise);
-      return;
-    }
 
     this.firstFormGroup = this.formBuilder.group({
       ValidatorsType: ['', Validators.required],
