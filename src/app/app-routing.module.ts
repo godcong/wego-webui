@@ -13,7 +13,7 @@ import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'webui',
     component: AppComponent,
     children: [{
       path: 'install',
@@ -23,12 +23,12 @@ const routes: Routes = [
       component: PagesComponent,
     },]
   },
-  {path: '', redirectTo: 'install', pathMatch: 'full'},
+  {path: '', redirectTo: 'webui/install', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent},
 ];
 
 const config: ExtraOptions = {
-  useHash: false,
+  useHash: true,
   enableTracing: true,
 };
 
