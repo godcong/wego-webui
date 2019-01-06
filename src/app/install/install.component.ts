@@ -1,9 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
-import {Administrator, InstallInterface} from './install.interface';
-import {AppService} from '../app.service';
-import {Router} from '@angular/router';
+import {Administrator, Database} from './install.interface';
 
 @Component({
   selector: 'app-install',
@@ -14,7 +12,7 @@ import {Router} from '@angular/router';
   }]
 })
 export class InstallComponent implements OnInit {
-  db: InstallInterface;
+  db: Database;
   admin: Administrator;
   db_host: string = '127.0.0.1:3306';
   db_user: string = 'root';
@@ -25,15 +23,10 @@ export class InstallComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
   thirdFormGroup: FormGroup;
-  private router: Router;
   private formBuilder: FormBuilder;
-  private service: AppService;
 
-  constructor(formBuilder: FormBuilder, router: Router, service: AppService) {
-    
-    this.router = router;
+  constructor(formBuilder: FormBuilder) {
     this.formBuilder = formBuilder;
-    this.service = service;
     this.db = {
       Type: this.Types[0],
       Host: this.db_host,
@@ -41,6 +34,7 @@ export class InstallComponent implements OnInit {
       Password: this.db_passwd,
       Name: this.db_name,
     };
+
     this.admin = {
       UserName: '',
       Password: '',

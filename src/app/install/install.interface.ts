@@ -1,4 +1,4 @@
-export interface InstallInterface {
+export interface Database {
   Type: string;
   Host: string;
   User: string;
