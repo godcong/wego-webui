@@ -1,6 +1,6 @@
 {
-  "name": "wechat-service",
-  "version": "0.0.0",
+  "name": "wego-webui",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
