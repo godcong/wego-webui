@@ -9,7 +9,7 @@ export class AppService {
   private http: HttpClient;
 
   isInstalled(): boolean {
-    return true;
+    return false;
     this.http.get('v0/inited').subscribe(function (data: any) {
       if (data != null && data['Code'] == 0) {
         console.log(data);
@@ -18,6 +18,7 @@ export class AppService {
     });
     return false;
   }
+
 
   constructor(http: HttpClient) {
     this.http = http;

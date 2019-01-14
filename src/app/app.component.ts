@@ -21,11 +21,11 @@ export class AppComponent implements OnInit {
     // setTimeout(() => {
     //   this.router.navigateByUrl('/pages');
     // }, 3000);
-    if (!this.service.isInstalled()) {
-      console.log('navigate');
-      let promise = this.router.navigateByUrl('webui/install');
-      console.log(promise);
-      return;
-    }
+    // if (!this.service.isInstalled()) {
+    //   console.log('navigate');
+    //   let promise = this.router.navigateByUrl('install');
+    //   console.log(promise);
+    //   return;
+    // }
   }
 }
