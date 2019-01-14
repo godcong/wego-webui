@@ -5,7 +5,7 @@ import {
   MatCardModule,
   MatDividerModule,
   MatFormFieldModule,
-  MatGridListModule,
+  MatGridListModule, MatIconModule,
   MatInputModule, MatListModule, MatOptionModule, MatSelectModule,
   MatStepperModule
 } from '@angular/material';
@@ -27,6 +27,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MatButtonModule,
     MatDividerModule,
     MatListModule,
+    MatIconModule,
     MatInputModule,
     MatOptionModule,
     MatSelectModule,

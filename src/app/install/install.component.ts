@@ -20,6 +20,7 @@ export class InstallComponent implements OnInit {
   db_name: string = 'wego';
   Types = ['MySQL', 'PostgreSQL', 'MSSQL', 'SQLite3'];
   isLinear = true;
+  hide = true;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
   thirdFormGroup: FormGroup;

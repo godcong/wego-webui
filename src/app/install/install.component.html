@@ -1,7 +1,7 @@
 <div class="installRoot">
   <mat-card class="installCard">
     <mat-card-title>首次运行安装程序</mat-card-title>
-    <mat-card-content>
+    <mat-card-content class="installContainer">
       <mat-vertical-stepper [linear]="isLinear" #stepper fxFlexFill>
         <mat-step [stepControl]="firstFormGroup">
           <form [formGroup]="firstFormGroup">
@@ -13,6 +13,7 @@
               </div>
               <!--<mat-divider vertical="false"></mat-divider>-->
               <mat-form-field appearance="outline">
+                <h3 matPrefix>数据库类型：</h3>
                 <mat-select placeholder="数据库类型" formControlName="ValidatorsType" name="db_type" [(ngModel)]="db.Type">
                   <mat-option *ngFor="let t of Types" [value]="t">
                     {{t}}
@@ -20,22 +21,27 @@
                 </mat-select>
               </mat-form-field>
               <mat-form-field appearance="outline">
+                <h3 matPrefix>数据库主机：</h3>
                 <input matInput placeholder="数据库主机" formControlName="ValidatorsHost" name="db_host"
                        [(ngModel)]="db.Host"
                        required>
               </mat-form-field>
               <mat-form-field appearance="outline">
+                <h3 matPrefix>数据库用户：</h3>
                 <input matInput placeholder="数据库用户" formControlName="ValidatorsUser" name="db_user"
                        [(ngModel)]="db.User"
                        required>
               </mat-form-field>
               <mat-form-field appearance="outline">
-                <input matInput placeholder="数据库用户密码" type="password" formControlName="ValidatorsPassword"
-                       name="db_passwd"
+                <h3 matPrefix>数据库密码：</h3>
+                <input matInput placeholder="数据库密码" type="password" formControlName="ValidatorsPassword"
+                       name="db_passwd" [type]="hide ? 'password' : 'text'"
                        [(ngModel)]="db.Password"
                        required>
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
               </mat-form-field>
               <mat-form-field appearance="outline">
+                <h3 matPrefix>数据库名称：</h3>
                 <input matInput placeholder="数据库名称" formControlName="ValidatorsName" name="db_name"
                        [(ngModel)]="db.Name"
                        required>
@@ -69,8 +75,8 @@
               <input matInput placeholder="管理员邮箱" formControlName="ValidatorsAdminEmail" required>
             </mat-form-field>
             <div>
-              <button mat-button matStepperPrevious type="button">Back</button>
-              <button mat-button matStepperNext type="button">Next</button>
+              <button mat-flat-button matStepperPrevious color="primary" type="button">Back</button>
+              <button mat-flat-button matStepperNext color="primary" type="button">Next</button>
             </div>
           </form>
         </mat-step>
@@ -81,9 +87,9 @@
               <h3>是否提交？</h3>
             </div>
             <div>
-              <button mat-button matStepperPrevious type="button">Back</button>
-              <button mat-button (click)="stepper.reset()">Reset</button>
-              <button mat-button type="submit">Submit</button>
+              <button mat-flat-button matStepperPrevious color="primary" type="button">Back</button>
+              <button mat-flat-button color="primary" (click)="stepper.reset()">Reset</button>
+              <button mat-flat-button color="primary" type="submit">Submit</button>
             </div>
           </form>
         </mat-step>
