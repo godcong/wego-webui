@@ -12,17 +12,29 @@ import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 // import {InstallComponent} from './install/install.component';
 
 const routes: Routes = [
+
   {
-    path: '',
-    component: AppComponent,
-    children: [{
-      path: 'install',
-      component: InstallComponent,
-    }, {
-      path: 'pages',
-      component: PagesComponent,
-    },]
+    path: 'pages',
+    component: PagesComponent,
   },
+  {
+    path: 'install',
+    component: InstallComponent,
+  },
+
+  // {
+  //   path: '',
+  //   component: AppComponent,
+  //   children: [{
+  //     path: 'install',
+  //     component: InstallComponent,
+  //   }, {
+  //     path: 'pages',
+  //     component: PagesComponent,
+  //   },
+  //
+  //   ],
+  // },
   {path: '', redirectTo: 'install', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent},
 ];

@@ -44,7 +44,7 @@ export class InstallComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    console.log('InstallComponent');
     this.firstFormGroup = this.formBuilder.group({
       ValidatorsType: ['', Validators.required],
       ValidatorsHost: ['', Validators.required],
