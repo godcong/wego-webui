@@ -15,8 +15,8 @@
               <mat-form-field appearance="outline">
                 <h3 matPrefix>数据库类型：</h3>
                 <mat-select placeholder="数据库类型" formControlName="ValidatorsType" name="db_type" [(ngModel)]="db.Type">
-                  <mat-option *ngFor="let t of Types" [value]="t">
-                    {{t}}
+                  <mat-option *ngFor="let types of Types" [value]="types">
+                    {{types}}
                   </mat-option>
                 </mat-select>
               </mat-form-field>
